@@ -18,10 +18,8 @@ def add_to_startup_folder():
     
     if not target_path.exists():
         shutil.copy2(current_file, target_path)
-        print(f"Программа добавлена в автозагрузку: {target_path}")
         return True
     else:
-        print("Программа уже в автозагрузке")
         return False
 
 def Quit():
